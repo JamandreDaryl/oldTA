@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jamandre's Portfolio</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- Animate.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="port.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Daryl Jamandre</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#hero">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#projects">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero" class="fadeIn">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h1>Welcome to My Portfolio</h1>
+          <p>Daryl Jamandre here, 1st year BSIT-WMA student from FEU Alabang.</p>
+          <a href="#projects" class="btn btn-primary">View My Work</a>
+        </div>
+        <div class="col-md-6">
+          <img src="./da.jpg" alt="Profile Picture" class="img-fluid rounded-circle">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h2>About Me</h2>
+          <p>My name is Daryl Kurt A. Jamandre, a 1st year BSIT-WMA student from FEU Alabang. I currently reside in Las Pinas City. I'm 19 years old and my birthday is on July 2, 2004. I chose the course BSIT because I am interested in technology especially computers, plus I've heard that there are a lot of opportunities that come with this course.For the skills related to my course whether it be coding or what, I would say that I'm still at low level.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h2>My Projects</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <img src="" class="card-img-top" alt="Project 1">
+            <div class="card-body">
+              <h5 class="card-title">Project 1</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+              <a href="#" class="btn btn-primary">Learn More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="" class="card-img-top" alt="Project 2">
+            <div class="card-body">
+              <h5 class="card-title">Project 2</h5>
+              <p class="card-text">Another project description goes here.</p>
+              <a href="#" class="btn btn-primary">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h2>Contact Me</h2>
+          <p>Feel free to contact me with the given details below.</p>
+          <p>E-mail: dajamandre@gmail.com</p>
+          <p>Contact number: 09158473916</p>
+          <p>Landline number: (02) 748 8673</p>
+          <form>
+            <input type="text" class="form-control form-control-lg" placeholder="Name">
+            <input type="email" class="form-control mt-3" placeholder="Email">
+            <input type="text" class="form-control mt-3" placeholder="Subject">
+            <div class="mb-3 mt-3">
+              <textarea class="form-control" rows="5" id="comment" name="text" placeholder="Project Details"></textarea>
+            </div>
+          </form>
+          <button type="button" class="btn btn-success mt-3">Contact Me</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+</body>
+</html>
